@@ -1,0 +1,150 @@
+/* css reset*/
+
+*{box-sizing: border-box;}
+*:before,*:after{box-sizing: border-box;}
+*{padding: 0;margin: 0;}
+ul,ol{list-style: none;}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{max-width: 100%;}
+/*style*/
+body{
+    background: rgb(253, 234, 234);
+}
+.globalHeader{
+    margin: 20px;
+}
+
+@media (min-width :500px){
+    .globalHeader{
+        margin: 160px 0 100px 0;
+    }
+}
+.secarchForm{
+    display: flex; 
+    justify-content: space-between;
+}
+.secarchForm > input{
+   width:100%;
+   margin-right: 10px;
+   height: 40px;
+   padding: 0px 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+}
+
+@media (min-width:500px){
+    .secarchForm{
+        max-width:400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.secarchForm > button{
+    white-space: nowrap;
+    padding: 0px 31px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #B9AFA3;
+    color: white;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.globalMain{
+   max-width:900px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.siteList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 20px;
+}
+@media (min-width : 500px){
+    .siteList{
+        margin-left: 0;
+        margin-right: -25px;
+    justify-content:flex-start;
+
+    }
+}
+.siteList>li{
+    margin-bottom:10px;
+}
+@media(min-width :500px){
+    .siteList>li{
+        margin-right: 25px;
+    }   
+}
+.globalMain .site{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px 0;
+    position: relative;
+    cursor:pointer;
+}
+.globalMain .site >.logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+}
+.globalMain .site >.link{
+    font-size: 14px;
+    margin-top: 4px;
+}
+.globalMain .site >.close{
+position: absolute;
+right: 8px;
+top:4px;
+display: none;
+cursor: default;
+}
+
+.globalMain .site:hover >.close {
+    display: block;
+}
+
+.globalMain .addButton{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    padding:20px 0;
+    height: 125px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor:pointer;
+}
+.globalMain .addButton .icon-Wrapper> .icon{
+    width: 60px;
+    height: 60px;
+}
+
+.globalMain .addButton .text{
+    font-size: 14px;
+    margin-top: 4px;
+}
+.globalMain .addButton .icon-Wrapper{
+ 
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
